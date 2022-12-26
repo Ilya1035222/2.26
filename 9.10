@@ -1,0 +1,7 @@
+#Построить треугольник с основанием a, высотой h и углом при вершине X (в градусах).
+import PIL
+from PIL import Image, ImageDraw
+img = Image.new ("RGB", (300, 300), (255, 255, 255))
+draw = ImageDraw.Draw(img)
+draw.polygon((200, 100, 100, 200, 100, 100), fill=(0, 0, 0), outline=(200, 200, 150) )
+img.show()
